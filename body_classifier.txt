@@ -1,0 +1,5 @@
+# Create our body classifier
+body_classifier = cv2.CascadeClassifier('haarcascade_fullbody.xml')
+cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+body_classifier.detectMultiScale()
+cv2.imshow()
